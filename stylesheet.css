@@ -3,60 +3,67 @@
 @import url('https://fonts.googleapis.com/css?family=Marvel:700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Russo+One|ZCOOL+QingKe+HuangYou&display=swap');
 body {
+    height: 100vh;
     background-image: linear-gradient(#363a3b, #868f96);
 }
-
 .btncontainer {
-    position: relative;
-    transform: scale(0.85);
-    display: grid;
-    grid-template-columns: 300px 300px 300px 300px 300px;
-    grid-column-gap: 7px;
-    justify-items: center;
+  position: relative;
+  transform: scale(0.85);
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px 300px;
+  grid-column-gap: 7px;
+  justify-items: center;
 }
 .cardContainer {
-   transform: scale(0.85);
-   position: relative;
-   margin-top: 7%;
-   margin-left: auto;
-   margin-right: auto;
-   display: grid;
-   grid-template-columns: repeat(5, auto);
+  transform: scale(0.85);
+  position: absolute;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-column-gap: 7px;
+}
+.card1 {
+  display: grid;
+  grid-row-gap: 35px;
+  justify-items: center;
 }
 #card1 {
-   display: grid; 
-   transform: skewY(10deg);
-   grid-template-rows: repeat(2, auto);
-   justify-content: center;
-   width: 300px;
-   height: 490px;
-   box-shadow: 1rem 0 3rem #3e3d3e;
-   color: #ffc1c9;
-   transition: 0.4s ease-out;
-   border-radius: 15px;
-   filter: blur(2px);
-   z-index: 5;
+  display: grid; 
+  transform: skewY(10deg);
+  grid-template-rows: repeat(2, auto);
+  justify-content: center;
+  width: 300px;
+  height: 490px;
+  box-shadow: 1rem 0 3rem #3e3d3e;
+  color: #ffc1c9;
+  transition: 0.4s ease-out;
+  border-radius: 15px;
+  filter: blur(2px);
+  z-index: 5;
 }
 #card1:hover {
-    transform: translateY(-20px);
-    transform: scale(1.2);
-    transition: 0.4s ease-out;
-    filter: blur(0.2px);
-    z-index: 5;
+  transform: translateY(-20px);
+  transform: scale(1.2);
+  transition: 0.4s ease-out;
+  filter: blur(0.2px);
+  z-index: 5;
+  cursor: pointer;
 }
 #card2 {
-    display: grid; 
-    transform: skewY(10deg);
-    grid-template-rows: repeat(2, auto);
-    justify-content: center;
-    width: 300px;
-    height: 490px;
-    color: #c6ea8d;
-    box-shadow: 1rem 0 3rem #3e3d3e;
-    transition: 0.4s ease-out;
-    border-radius: 15px;
-    filter: blur(2px);
-    z-index: 4;
+  display: grid; 
+  transform: skewY(10deg);
+  grid-template-rows: repeat(2, auto);
+  justify-content: center;
+  width: 300px;
+  height: 490px;
+  color: #c6ea8d;
+  box-shadow: 1rem 0 3rem #3e3d3e;
+  transition: 0.4s ease-out;
+  border-radius: 15px;
+  filter: blur(2px);
+  z-index: 4;
  }
  #card2:hover {
     transform: translateY(-20px);
@@ -64,6 +71,7 @@ body {
     transition: 0.4s ease-out;
     filter: blur(0.2px);
     z-index: 5;
+    cursor: pointer;
 }
  #card3 {
     display: grid; 
@@ -85,6 +93,7 @@ body {
     transition: 0.4s ease-out;
     filter: blur(0.2px);
     z-index: 5;
+    cursor: pointer;
 }
  #card4 {
     display: grid; 
@@ -106,6 +115,7 @@ body {
     transition: 0.4s ease-out;
     filter: blur(0.2px);
     z-index: 5;
+    cursor: pointer;
 }
  #card5 {
     display: grid; 
@@ -127,12 +137,8 @@ body {
     transition: 0.4s ease-out;
     filter: blur(0.2px);
     z-index: 5;
+    cursor: pointer;
 }
-/*.buttonContainer {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-}*/
 #btn1 {
     width: 95px;
     height: 90px;
@@ -145,22 +151,12 @@ body {
     font-family: 'Orbitron', sans-serif;
     animation: pulse 1.5s infinite;
 }
-@keyframes pulse {
-    0% {
-     transform:scale(.9);
-    }
-    70% {
-     transform:scale(1);
-    }
-      100% {
-    transform:scale(.9);
-    }
-  }
 #btn1:hover {
     transition: 1s;
     border: none;
     background-image: radial-gradient(#c33764, #1d2671);
     color: #ffbbbb;
+    cursor: pointer;
   }
 #btn2 {
     width: 95px;
@@ -175,22 +171,12 @@ body {
     font-family: 'Orbitron', sans-serif;
     animation: pulse 1.5s infinite;
 }
-@keyframes pulse {
-    0% {
-     transform:scale(.9);
-    }
-    70% {
-     transform:scale(1);
-    }
-      100% {
-    transform:scale(.9);
-    }
-  }
 #btn2:hover {
     transition: 1s;
     border: none;
     background-image: radial-gradient(#0d8b6c, #69e498);
     color: #c5eea4;
+    cursor: pointer;
   }
 #btn3 {
     width: 95px;
@@ -205,22 +191,12 @@ body {
     font-family: 'Orbitron', sans-serif;
     animation: pulse 1.5s infinite;
 }
-@keyframes pulse {
-    0% {
-     transform:scale(.9);
-    }
-    70% {
-     transform:scale(1);
-    }
-      100% {
-    transform:scale(.9);
-    }
-  }
 #btn3:hover {
     transition: 1s;
     border: none;
     background-image: radial-gradient(#ff7f44, #ffc371);
     color: #ffeb94;
+    cursor: pointer;
   }
 #btn4 {
     width: 95px;
@@ -235,30 +211,20 @@ body {
     font-family: 'Orbitron', sans-serif;
     animation: pulse 1.5s infinite;
 }
-@keyframes pulse {
-    0% {
-     transform:scale(.9);
-    }
-    70% {
-     transform:scale(1);
-    }
-      100% {
-    transform:scale(.9);
-    }
-  }
 #btn4:hover {
     transition: 1s;
     border: none;
     background-image: radial-gradient(#02aabd, #00cdac);
     color: #a9f1df;
+    cursor: pointer;
   }
 #btn5 {
     width: 95px;
     height: 90px;
     background-color: transparent;
-    border: 1px solid #aa91eb;
+    border: 1px solid #c7b1ff;
     border-radius: 50%;
-    color: #aa91eb;
+    color: #c7b1ff;
     text-align: center;
     display: inline-block;
     font-size: 21px;
@@ -281,6 +247,7 @@ body {
     border: none;
     background-image: radial-gradient(#764ba2, #667eea);
     color: #a890fe;
+    cursor: pointer;
   }
 .imageClass {
     margin-left: auto;
@@ -322,52 +289,51 @@ body {
     background-image: linear-gradient(to bottom right, #1d2671, #764ba2);
     border-radius: 30px;
 }
+
 #poke-container {
-	width: 10em;
-	height: 10em;
-    position: relative;
-    margin: auto;
-    transform: scale(0.8);
-	animation: translating 5s infinite;
+   height: 10em;
+   width: 10em;
+   position: absolute;
+   z-index: 300;
+   transform: scale(0.8);
 }
-/* animation frame! rotation movement of the pokeball */
-@keyframes spinning {
+/* pokeball container */
+#pokeball-container {
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+  z-index: 6;
+  animation: spinning 5s infinite; 
+}
+ @keyframes spinning {
     0% {
-      transform: rotate(-45deg);
       transform: rotate(-45deg);
     }
     50% {
       transform: rotate(325deg);
-      transform: rotate(325deg);
     }
     100% {
       transform: rotate(-45deg);
-      transform: rotate(-45deg);
     }
-  }
+  } 
   
-  @keyframes color-change {
-      0%, 20%, 40%, 60%, 100% {
-          background-color: #fff;
-      }
-      10%, 30%, 50%, 70%, 90% {
-          background-color: #f00;
-      }
-  }
-/* pokeball container */
-#pokeball-container {
-	width: 10em;
-    height: 10em;
-    animation: spinning 5s infinite;   
-}
-
+/*POKEball*/
 #pokeball { 
 	width: 10em;
-	height: 10em;
+  height: 10em;
+  transform: scale(0.8);
 	background-color: #fff;
 	border-radius: 50%;
-	position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
+}
+#pokeball::before {
+	content: '';
+	background-color: red;
+	border-radius: 5em 5em 0 0;
+	width: 10em;
+	height: 5em;
+	position: absolute;
 }
 #pokeball .pokeball-details {
 	width: 10em;
@@ -401,11 +367,131 @@ body {
 	z-index: 250;
 	animation: color-change 3s infinite;
 }
-#pokeball::before {
-	content: '';
-	background-color: red;
-	border-radius: 5em 5em 0 0;
-	width: 10em;
-	height: 5em;
-	position: absolute;
+@keyframes color-change {
+  0%, 20%, 40%, 60%, 100% {
+      background-color: #fff;
+  }
+  10%, 30%, 50%, 70%, 90% {
+      background-color: #f00;
+  }
 }
+@keyframes waggle {
+  from {
+    transform: rotate(-10deg);
+  }
+  to {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes showPokeball {
+  0% {
+    transform: translateY()
+  }
+}
+/* big pokemonball*/
+.main-container {
+  width: 500px;
+  margin: auto;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+}
+.main-container:hover {
+  cursor: pointer;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.pokemon-top-part {
+  width: 200px;
+  height: 100px;
+  background: #F22613;
+  margin: 0 auto;
+  border-radius: 200px 200px 0 0;
+  border: 5px solid #333;
+}
+.pokemon-bottom-part {
+  position: relative;
+}
+
+.white-part {
+  width: 200px;
+  height: 100px;
+  background: #ffffff;
+  margin: 0 auto;
+  border-radius: 0 0 200px 200px;
+  border: 5px solid #333;
+}
+
+.black-line {
+  width: 210px;
+  height: 25px;
+  background: #333;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.black-line::after {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background: #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-25%);
+}
+.black-line::before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-2px);
+  z-index: 999;
+}
+
+@media (max-width: 800px) {
+  body {
+    height: 100%;
+  }
+  .main-container {
+    position: relative;
+    margin: auto;
+  }
+  .cardContainer {
+    transform: scale(0.85);
+    position: relative;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+ }
+ .card1 {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: repeat();
+   grid-row-gap: 10px;
+   grid-column-gap: 10px;
+   align-items: center;
+ }
